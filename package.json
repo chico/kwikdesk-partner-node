@@ -1,0 +1,35 @@
+{
+  "name": "kwikdesk-partner-node",
+  "version": "0.0.0",
+  "description": "KwikDesk Partner API Node Client Library",
+  "main": "lib/client.js",
+  "scripts": {
+    "test": "mocha test/main.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chico/kwikdesk-partner-node.git"
+  },
+  "keywords": [
+    "kwikdesk",
+    "api",
+    "client"
+  ],
+  "author": "Chico Charlesworth <chico.charlesworth@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chico/kwikdesk-partner-node/issues"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "lib/main.js",
+    "lib/error.js",
+    "lib/message.js",
+    "lib/search.js",
+    "test/main.test.js"
+  ],
+  "dependencies": {
+    "request": "~2.34.0"
+  }
+}
