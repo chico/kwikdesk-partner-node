@@ -23,7 +23,7 @@ Kwikdesk.token("my-app", function (err, token) {
 ### Messages
 
 ```javascript
-Kwikdesk.message(token, "This is a private message on a secure channel", 1440, true, function (err, response) {
+Kwikdesk.message(token, participantToken, "This is a private message on a secure channel", 1440, true, function (err, response) {
     console.log(response.message);
 });
 ```
@@ -31,7 +31,7 @@ Kwikdesk.message(token, "This is a private message on a secure channel", 1440, t
 ### Channels
 
 ```javascript
-Kwikdesk.channel(token, function (err, results) {
+Kwikdesk.channel(token, participantToken, function (err, results) {
     console.dir(results);
 });
 ```

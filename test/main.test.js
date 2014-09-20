@@ -12,16 +12,16 @@ describe('Kwikdesk', function() {
 		this.timeout(10000);
 
 		console.log("\nGet token");
-		Kwikdesk.token("my-app", function (err, token) {
+		Kwikdesk.token("my-app", function (err, token, participantToken) {
 			if (err) {return done(err);}
 
-			console.log("Posting message with token " + token);
-			Kwikdesk.message(token, "This is a private message on a secure channel #random" + Math.floor(Math.random()*100000001), 1440, true, function (err, response) {
+			console.log("Posting message with token " + token + " and participant token " + participantToken);
+			Kwikdesk.message(token, participantToken, "This is a private message on a secure channel #random" + Math.floor(Math.random()*100000001), 1440, true, function (err, response) {
 			  if (err) {return done(err);}
 			  console.log(response.message);
 
 				console.log("Channel messages:");
-				Kwikdesk.channel(token, function (err, results) {
+				Kwikdesk.channel(token, participantToken, function (err, results) {
 					if (err) {return done(err);}
 					console.dir(results);
 				  done();
