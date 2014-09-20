@@ -31,7 +31,7 @@ Kwikdesk.message(token, participantToken, "This is a private message on a secure
 ### Channels
 
 ```javascript
-Kwikdesk.channel(token, participantToken, function (err, results) {
+Kwikdesk.channel(token, participantToken, since, function (err, results) {
     console.dir(results);
 });
 ```

@@ -21,7 +21,7 @@ describe('Kwikdesk', function() {
 			  console.log(response.message);
 
 				console.log("Channel messages:");
-				Kwikdesk.channel(token, participantToken, function (err, results) {
+				Kwikdesk.channel(token, participantToken, null, function (err, results) {
 					if (err) {return done(err);}
 					console.dir(results);
 				  done();
