@@ -15,8 +15,9 @@ var Kwikdesk = require('kwikdesk-partner-node');
 ### Tokens
 
 ```javascript
-Kwikdesk.token("my-app", function (err, token) {
+Kwikdesk.token("my-app", function (err, token, participantToken) {
     console.log(token);
+    console.log(participantToken);
 });
 ```
 
