@@ -21,6 +21,15 @@ Kwikdesk.token("my-app", function (err, token, participantToken) {
 });
 ```
 
+### Join
+
+```javascript
+Kwikdesk.join(token, function (err, token, participantToken) {
+    console.log(token);
+    console.log(participantToken);
+});
+```
+
 ### Messages
 
 ```javascript
