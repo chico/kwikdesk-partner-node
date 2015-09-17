@@ -1,6 +1,6 @@
 {
   "name": "kwikdesk-partner-node",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "KwikDesk Partner API Node Client Library",
   "main": "lib/main.js",
   "scripts": {
